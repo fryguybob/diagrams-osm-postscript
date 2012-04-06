@@ -1,0 +1,23 @@
+Name:                diagrams-osm-postscript
+Version:             0.1
+Synopsis:            Render Open Street Map data to Postscript via diagrams.
+-- Description:         
+License:             BSD3
+License-file:        LICENSE
+Author:              Ryan Yates
+Maintainer:          ryates@cs.rochester.edu
+-- Copyright:           
+Category:            Graphics
+Build-type:          Simple
+-- Extra-source-files:  
+Cabal-version:       >=1.2
+
+Executable osmtops
+  Main-is:             Main.hs
+  hs-source-dirs:      src
+  Build-depends:       base >= 4.3 && < 4.6,
+                       diagrams-lib >= 0.5 && < 0.6,
+                       diagrams-core >= 0.5 && < 0.6,
+                       diagrams-postscript >= 0.1 && < 0.2,
+                       diagrams-osm >= 0.1 && < 0.2
+
